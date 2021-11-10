@@ -25,6 +25,7 @@ export let calculateTotalOvertime = (colleagues) => {
         if (hoursWorked > colleague.contractedHours) {
             return totalOvertime.push(hoursWorked - colleague.contractedHours)
         }
+        return null;
     });
 
     return totalOvertime.reduce(reducer);
