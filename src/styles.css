@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+body {font-size: 16px; line-height: 1.5em; font-family: 'Roboto', sans-serif; font-weight: 400; background: #FAFAFA; color: #333; margin: 0; padding: 0;}
+
+h1 {font-size: 2em; font-weight: 400; line-height: 1.5em; color: #185D6F; margin: 0;}
+.dark h1 {color: #FFF;}
+h2 {font-size: 2.25em; line-height: 1.5em; margin: 1em 0 0; font-weight: 400; color: #185D6F;}
+h3 {font-size: 1.75em; line-height: 1.5em; font-weight: 400; margin: 1.5em 0 0 0;}
+
+h4, p, ul, ol, label {font-size: 1.25em; line-height: 1.5em; margin: 1em 0 0 0;}
+h4 {font-weight:500; margin-top: 2em}
+input, textarea, select {font-size: 1.1em; line-height: 1.5em; }
+textarea {font-family: 'Roboto', sans-serif; font-weight: 400;}
+
+ul {padding: 0 1em; margin-left: 1em;}
+ul ul, ol ol {font-size: 1em; margin: 0; padding: 0 1em 0.75em 1em;}
+li {margin: 0.75em 0;}
+a {color: #BA7800; text-decoration: none;}
+a:hover {text-decoration: underline;} 
+
+p a {text-decoration: underline;}
+p a.button {text-decoration: none;} 
+p a:hover {text-decoration: none;}
+p.date {display: none;}
+
+strong {font-weight: 500;}
+
+img, .rounded {border-radius: 4px;}
+.shadow {box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);}
+.border {border: 1px solid #E4E4E4;}
+.border-bottom {border-bottom: 1px solid #E4E4E4;}
+
+h2.underline {border-bottom: 2px solid;}
+
+.whitebg {background: #FFF;}
+.offwhitebg {background: #FAFAFA;}
+.teal {background: #D3F1F1}
+
+button {font-size: 1em; font-weight: 500; padding: 0.625em 2em; display: inline-block; margin: 1.5em 1.5em 0 0; border-radius: 8px; border: none;}
+a.button {display: inline-block; padding: 0.625em 2em; margin: 1.5em 1.5em 0 0; border-radius: 8px;}
+
+.dark {background: #185D6F; color: #FFF;}
+button.dark:hover, a.dark:hover {background: #489982;}
+button.light {background: #FFC247; color: #333;}
+button.light:hover {background: #BA7800; color: #FFF;}
+button:focus {box-shadow: 0 0 0 2px #FFF, 0 0 0 6px #2D9CDB;}
+
+button.ghost {background: #FFF; border: 2px solid #BA7800; color: #BA7800;}
+
+button.ghost:hover {border: 2px solid #BA7800; background: #BA7800; color: #fff;}
+button.ghost:focus:before {border: 1px solid #BA7800;}
+
+.section {overflow: auto;}
+.content {max-width: 1200px; margin: 0 auto 0 auto; box-sizing: border-box; overflow: auto;}
+.content {margin-top: 2.375em; margin-bottom: 2.375em;}
+
+.header, main, .footer {width: 100%; box-sizing: border-box;}
+.header .content {margin: 0 auto;}
+.header {padding: 1.6em 0;}
+
+.footer {background: #185D6F; color: #FFF; padding-bottom: 6.25em;}
+.footer .content {margin: 0 auto; position: relative;}
+.footer p {font-size: 1em;}
+.footer a {color: #fff;}
+
+
+a.tile {display: inline-block; font-size: 1.25em; text-align: center; width: 30%; padding: 3em 0; box-sizing: border-box; background: #FFF; margin: 1em; border: 1px solid #E4E4E4;}
+a.tile:hover {box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);}
+
+.left {float: left; overflow: auto;}
+.right {float: right; overflow: auto;}
+
+.flex {display: flex;}
+
+@media screen and (max-width: 1200px) {
+    .content {max-width: 1024px;}
+    a.tile {width: 29%;}
+}
+
+@media screen and (max-width: 1024px) {
+    .content {max-width: 960px;}
+}
+
+@media screen and (max-width: 768px) {
+	h1 {font-size: 1.5em;}
+	h1.custom {font-size: 3em;}
+    h2 {font-size: 1.5em; font-weight: 500;}
+    h3 {font-size: 1.25em; font-weight: 500; margin-top: 1.5em;}
+	p {margin-top: 0.8em;}
+
+    p, ul, input, label, select, textarea {font-size: 1em; width: 100%; box-sizing: border-box;}
+    
+    .section.teal {position: relative;}
+
+    a.tile {display: block; width: 100%; margin: 1em 0; padding: 1.5em 0;}
+
+    .left, .right {float: none; overflow: visible; }
+    
+    footer {margin-top: 2em;}
+}
+
+@media print {
+    body {background: #fff; font-size: 12px;}
+    header, nav, footer, .profile, .section:last-of-type, .logout, .printMe, a.mail, .progress {display: none;}
+    .content {margin-top: 0; margin-bottom: 0;}
+    h1, h2, h3, p, ul, ol {color: #000;}
+    h2 {margin-top: 1.5em; font-size: 1.6em}
+    h3 {margin-top: 1em; font-size: 1.3em}
+    p {margin-top: 0.5em;}
+    p.date {display: block; margin: 1.5em 0;}
+}
+
+
+/* Rota Styles */
+.rota {padding: 1.5em;}
+.rota h2, .assignSupport h2 {font-size: 1.25em; font-weight: 500;}
+
+em {font-style: normal; color: #747474;}
+p.overtime {color: #7E2323;}
+
+.teamStats {display: flex;}
+
+.capacity {padding: 0.5em 1.5em 1em 1.5em; background: #DAF1F1; text-align: center;}
+.utilisation {padding: 0.5em 1.5em 1em 1.5em; background: #F5F5F5;}
+.barChart {margin-top: 0.85em; height: 1.4em; width: 100%; background: #ddd; position: relative;} 
+.barChart div {height: 100%; display: inline-block;}
+
+.utilisation ul {list-style-type: none; padding: 0;}
+.utilisation li {margin: 0 0 0.75em 0;}
+.utilisation li:before {content: " "; display: inline-block; height: 1em; width: 1em; margin: 0 0.5em 0 0;}
+
+.barChart .visits, .utilisation li.visits:before {background: #009688;}
+.barChart .travel, .utilisation li.travel:before {background: #91DBD4;}
+.barChart .benchTime, .utilisation li.benchTime:before {background: #F0B387;}
+.barChart .overTime, .utilisation li.overTime:before {background: #7E2323;}
+.barChart .overTime {position: absolute; top: 0; right: 0;}
+
+.assignSupport {padding: 1.4em; background: #fff; }
+.assignSupport div.progress {width: 100%; height: 4px; margin: 0.25em 0; box-shadow: none; background: #C8C8C8; padding: 0;}
+.assignSupport .colleague div.progress {padding: 0;}
+div.progress .completed {height: 100%; background: #009688; padding: 0;}
+.colleague div.progress.overtime {margin: 0.75em 0 0.5em; }
+div.progress.overtime .completed {background: #7E2323;}
+
+.assignSupport img {width: 60px; height: 60px;}
+.assignSupport .colleague div {padding: 0 1em;}
+.assignSupport .colleague p {margin: 0.2em 0;}
+
+ul.team, .assignSupport ul {list-style-type: none; padding: 0.2em; margin: 0;}
+.assignSupport li {margin-top: 2.8em;}
+.team li {opacity: 1; transition: opacity 0.25s ease-out;}
+.team img {width: 40px; height: 40px;}
+.team li p {font-size: 0.75em; margin: 0 0.5em;}
+.assignSupport li {opacity: 1; transition: opacity 0.25s ease-out;}
+.team li.unselected, .assignSupport li.unselected {opacity: 0.4;}
+.team li.selected img, .assignSupport li.selected img {box-shadow: 0 0 0 2px #fff, 0 0 0 4px #009688;}
+
+
+.colleague {display: flex;}
+.colleague img {border-radius: 50%; border: 1px solid #333;}
+.colleague h4 {margin: 0; font-size: 1em;}
+.colleague div {padding-top: 0.25em;}
+.shift .colleague div {padding: 0;}
+.colleague div p {margin-top: 0;}
+
+.shifts {margin-top: 1.25em;}
+.shift, .meeting {padding-top: 1em; margin-bottom: 2em; border-radius: 4px; background: #F5F5F5; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25); position: relative;}
+.meeting {margin-top: 1.5em; padding-bottom: 1em; padding-left: 1em; display: flex;}
+
+.shift button {padding: 0.5em; margin: 0; background: none; position: absolute; top: 0; right: 0.5em; height: fit-content;}
+.shift button:focus {border: none; outline: 0; box-shadow: 0 0 0;}
+.shift button {transform: none;}
+.shift.close button {transform: rotate(180deg);}
+
+
+.stats.close, .close .stats.open {display: none;}
+.close .stats.close {display: block;}
+
+.shift h4, .shift p, .meeting h4, .meeting p {color: #185D6F; margin: 0 0 0 1em;}
+.shift h4, .meeting h4 {margin-left: 0.75em;}
+.shift p, .meeting p {margin-top: 0.4em}
+
+.shift.close .visit, .shift.close .free {display: none}
+
+.support img {width: 50px; height: 50px;}
+
+.visit, .free { padding: 0.85em; margin: 0.85em 1em 0 1em; border-radius: 4px;}
+.visit {background: #fff;}
+.free {background: #F2FFFF; border: #DAF1F1 2px solid;}
+
+.free h4 {color: #333;}
+.visit h4, .free h4 {margin: 0;}
+.visit p, .free p {font-weight: 500; color: #333; margin: 0.85em 0 0;}
+.free p {color: #185D6F;}
+
+.support {width: 100%; box-sizing: border-box; border-radius: 0 0 4px 4px; border-top: 1px solid #BFBFBF; background: #fff; padding: 0.85em 1em; margin-top: 1em;}
+
+.modal {position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; z-index: 6; background: rgba(0, 0, 0, 0.75);}
+.modal.hide {display: none;}
+.modal div { padding: 1.25em 2em; box-shadow: 0 24px 24px rgba(0, 0, 0, 0.25); margin: 3em auto;}
+.modal h2, .modal p {margin: 0;}
+.modal p {margin-top: 1.5em}
+.modal .actions {width: 100%; margin: 1.5em 0 0 0; box-shadow: none; padding: 0; text-align: right;}
+.modal .actions button {position: relative; transform: rotate(0); background: none; color: #009688; text-transform: uppercase; padding: 0.625em 0.5em 0.625em 1.5em; font-weight: 500; font-size: 1em;}
+
+@media screen and (min-width: 1401px) {
+    .rota h2, .assignSupport h2 {font-size: 1.25em; font-weight: 500;}
+    .rota p, .assignSupport p, .teamStats p, .assignSupport ul, .teamStats ul {font-size: 1em}
+
+    .capacity, .utilisation {width: 50%; box-sizing: border-box;}
+    .utilisation ul {column-count: 4; column-fill: balance; column-gap: 0;}
+
+    .assignSupport {position: relative; background: none; padding: 0;}
+    ul.team {display: none;}
+    .team li {display: inline-block; width: 20%;}
+
+    .day {display: flex; flex-wrap: wrap;}
+    .day h2 {width: 100%; font-weight: 300; color: #333; text-transform: capitalize; margin: 0.5em 0 1em; border-bottom: 1px solid #ccc;}
+    .shift {width: 19%; margin-left: 0; margin-right: 1%; box-sizing: border-box;}
+    .shift.selected {border: 2px solid #009688;}
+    .support {width: 100%; box-sizing: border-box; border-radius: 0 0 4px 4px; border-top: 1px solid #BFBFBF; background: #fff; padding: 0.85em 1em; margin-top: 1em;}
+    .shift .support button {position: relative; transform: rotate(0); background: #185D6F; padding: 0.625em 2em; font-weight: 500;}
+
+    .assignSupport ul.sticky {position: fixed; top: 0; left: 0; z-index: 5; width: 100%; padding: 0 1.5em; background: #fff; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);}
+    .assignSupport li {width: 20%; display: inline-block; margin-top: 1em;}
+    .assignSupport ul.sticky p {display: none;}
+
+    .modal div {background: #fff; width: 80vw; max-height: 90vh; box-sizing: border-box; overflow-y: scroll;}
+    .modal ul {font-size: 1em}
+}
+
+@media screen and (max-width: 1400px) {
+    .rota h2, .assignSupport h2 {font-size: 1.25em; font-weight: 500;}
+    .rota p, .assignSupport p, .teamStats p, .assignSupport ul, .teamStats ul {font-size: 1em}
+    
+    .capacity, .utilisation {width: 50%; box-sizing: border-box;}
+    .utilisation ul {column-count: 4; column-fill: balance; column-gap: 0;}
+
+    ul.team {display: none;}
+    .assignSupport {position: normal; background: none; padding: 0;}
+    .assignSupport ul.sticky {position: fixed; top: 0; left: 0; z-index: 5; width: 100%; padding: 0 1.5em; background: #fff; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);}
+    .assignSupport li {width: 25%; display: inline-block; margin-top: 1.5em}
+    .assignSupport ul.sticky p {display: none;}
+    .team li {display: inline-block; width: 25%;}
+
+    .day {display: flex; flex-wrap: wrap;}
+    .day h2 {width: 100%; font-weight: 300; color: #333; text-transform: capitalize; margin: 0.5em 0 1em; border-bottom: 1px solid #ccc;}
+    .shift {width: 23%; margin-left: 1%; margin-right: 1%; box-sizing: border-box;}
+    .shift.selected {border: 2px solid #009688;}
+    .support {width: 100%; box-sizing: border-box; border-radius: 0 0 4px 4px; border-top: 1px solid #BFBFBF; background: #fff; padding: 0.85em 1em; margin-top: 1em;}
+    .shift .support button {position: relative; transform: rotate(0); background: #185D6F; padding: 0.625em 2em; font-weight: 500;}
+
+    .modal div {background: #fff; width: 80vw; max-height: 90vh; box-sizing: border-box; overflow-y: scroll;}
+}
+
+@media screen and (max-width: 1200px) {
+    .utilisation ul {column-count: 3; column-fill: balance; column-gap: 0;}
+    .shift {width: 31%; margin-left: 1%; margin-right: 1%; box-sizing: border-box;}
+}
+
+@media screen and (max-width: 900px) {
+    
+    .utilisation ul {column-count: 3; column-fill: balance; column-gap: 0;}
+    ul.team {display: block;}
+    .team li {display: inline-block; width: 33%;}
+
+    .assignSupport {position: fixed; bottom: 0; left: 0; z-index: 4; box-sizing: border-box; width: 100vw; height: 5vh; transition: height 0.25s ease-out; border-radius: 8px 8px 0 0; border: 1px solid #ccc; box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.25); padding: 1.4em; background: #fff; }
+    .assignSupport.open {height: 60vh; }
+    .assignSupport .inner {margin-top: 1em; height: 60vh; overflow-y: scroll;}
+    .assignSupport ul.sticky {position: relative; top: 0; left: 0; z-index: 5; width: 100%; padding-left: 0; background: none; box-shadow: none;}
+    .assignSupport li {width: 50%; display: inline-block;}
+    .assignSupport ul.sticky p {display: block;}
+
+    .shift {width: 48%; margin-left: 1%; margin-right: 1%; box-sizing: border-box;}
+}
+
+@media screen and (max-width: 850px) { 
+    .teamStats {display: block;}
+    .capacity, .utilisation {width: 100%;}
+
+    .shift {width: 45%; margin-left: 2%; margin-right: 2%;}
+}
+
+@media screen and (max-width: 600px) {
+    
+    .utilisation ul {column-count: 2; column-fill: balance; column-gap: 0;}
+    .team li {display: inline-block; width: 50%;}
+
+    .shifts {display: block;}
+    .shift {width: 100%; margin-left: 0; margin-right: 0; display: block;}
+
+    .assignSupport {position: fixed; bottom: 0; left: 0; z-index: 4; box-sizing: border-box; width: 100vw; height: 5vh; transition: height 0.25s ease-out; border-radius: 8px 8px 0 0; border: 1px solid #ccc; box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.25);}
+    .assignSupport.open {height: 60vh; }
+    .assignSupport .inner {margin-top: 1em; height: 60vh; overflow-y: scroll;}
+
+    .assignSupport img {width: 60px; height: 60px;}
+    .assignSupport .colleague div {padding: 0 1em;}
+    .assignSupport .colleague p {margin: 0.2em 0;}
+
+    .handle {height: 4px; border-top: 1px solid #C3C3C3; border-bottom: 1px solid #C3C3C3; width: 60%; margin: auto;}
+}
+
+@media screen and (max-width: 500px) {
+    .assignSupport li {width: 100%; display: block;}
+} 
